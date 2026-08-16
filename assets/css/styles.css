@@ -180,9 +180,8 @@ a:hover { opacity: 0.75; }
 
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
-  max-width: 420px;
 }
 
 .project-card {
@@ -341,6 +340,7 @@ a:hover { opacity: 0.75; }
 
 @media (max-width: 800px) {
   .hero,
+  .project-grid,
   .section-row {
     grid-template-columns: 1fr;
   }
