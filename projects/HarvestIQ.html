@@ -47,52 +47,17 @@
             <article class="article-content">
                 <section class="content-section">
                     <h2>Objectives</h2>
-                    <p>During 2020, we experienced rise and advancement of Transformers in deep learning models being 
-                        applied with both natural language processing and computer vision tasks. 
-                        At the same time, CNN models were being implemented extensively across diverse real‑world 
-                        applications, particularly in image classification, object detection, facial recognition, 
-                        self‑driving cars, medical imaging, and robotic perception (Vaz et al., 2021), 
-                        despite the proof that adapting Transformer architectures will help reduce computational cost and higher (Dosovitskiy et al., 2020). </p>
-
-                        <p>So there are architects involving CNN models, but not a lot of problems 
-                            have been solved using Vision Transformer, or ViT. Therefore, we want to evaluate when a task 
-                            that is commonly solved with CNN, requires subtle attention to details, can be translated into 
-                            ViT. </p>
-                    
-                        <p>The study aimed to develop a Vision Transformer (ViT)-based architecture for 
-                            Facial Beauty Prediction, leveraging transfer learning from a large-scale pre-trained model 
-                            (ImageNet) and comparing its performance against two CNN baselines - VGG-16 and ResNet-50. The goal was to assess whether transformer-based models could outperform state-of-the-art CNNs in this task.
-</p>
-                </section>
-
-                <section class="content-section">
-                    <h2>Data Preprocessing</h2>
-                    <p>
-                    We used the SCUT-FBP5500 dataset as the primary benchmark for this study. 
-                        This dataset consists of 5,500 frontal facial images, with a gender distribution of 2,500 males and 
-                        3,000 females. The participants range in age from 15 to 60 years and include 2,000 Asian males, 
-                        2,000 Asian females, 750 Caucasian males, and 750 Caucasian females. Each image was evaluated by 
-                        60 independent raters using a 5-point scale, where 1 represented the lowest attractiveness score. 
-                        The final score for each image was calculated as the mean of all ratings, minimizing individual bias and producing a more objective measure of perceived facial beauty. 
-                    </p>
-
-                    <p>
-                        We kept the original images quality and augmentation. 
-                        We believe tasks involving subtle aesthetic evaluations requires the authenticity of the original 
-                        facial features that are included in the dataset.
-                    </p>
+                    <p> Helping Farmers tracking crops' health and diseases</p>
                 </section>
 
 <section class="content-section">
     <h2>Process</h2>
     <div class="process-steps">
         <ol>
-            <li>Reviewed literature on CNN-based models (VGG-16, ResNet-50) and the emerging Vision Transformer (ViT).</li>
-            <li>Collected and prepared the SCUT-FBP5500 dataset (5,500 annotated facial images).</li>
-            <li>Pre-processed data and applied transfer learning from ImageNet-pretrained models.</li>
-            <li>Implemented and fine-tuned three architectures: VGG-16, ResNet-50, and Vision Transformer (ViT).</li>
-            <li>Evaluated models using Mean Squared Error (MSE), Mean Absolute Error (MAE), and Pearson Correlation.</li>
-            <li>Compared results to identify whether ViT outperforms state-of-the-art CNN baselines.</li>
+            <li>Single-page HTML Field Diagnostics mock (Claude Artifacts) to prove the flow: farm → leaf photo → classify → forecast.</li>
+            <li>Migrated into a Next.js 15 monorepo (apps/web): dashboard, farms, diagnose, reports, resources, settings. Demo AI runs on /api/diagnose and /api/forecast. Data stays in browser localStorage.</li>
+            <li>Manual QA across pages, security (no browser API keys, CSP, image/body limits), accessibility, and bug fixes (build, Amplify paths, Maps allowlist).</li>
+            <li>Push main on GitHub → AWS Amplify Hosting (App Runner was closed to new accounts). Live URL: https://main.d2gy4gwcmsx17c.amplifyapp.com</li>
         </ol>
     </div>
 </section>
@@ -102,37 +67,26 @@
                     <div class="tools-grid">
                         
                         <div class="tool-category">
-                            <h3>Concepts:</h3>
+                            <h3>Languages & frameworks</h3>
                             <ul class="tech-list">
-                                <li>Deep Learning</li>
-                                <li>Transfer Learning</li>
-                                <li>Computer Vision</li>
+                                <li>TypeScript</li>
+                                <li>React 19</li>
+                                <li>Next.js 15 </li>
                             </ul>
                         </div>
                         
                         <div class="tool-category">
-                            <h3>Models:</h3>
+                            <h3>Backend/APIs:</h3>
                             <ul class="tech-list">
-                                <li>Vision Transformer (ViT)</li>
-                                <li>ResNet-50</li>
-                                <li>VGG-16</li>
+                                <li>Next.js Route Handlers (/api/diagnose, /api/forecast)</li>
                             </ul>
                         </div>
-                        
+
                         <div class="tool-category">
-                            <h3>Dataset:</h3>
+                            <h3>Cloud / DevOps:</h3>
                             <ul class="tech-list">
-                                <li>SCUT-FBP5500 (Facial Beauty Prediction Benchmark)</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="tool-category">
-                            <h3>Development:</h3>
-                            <ul class="tech-list">
-                                <li>Python</li>
-                                <li>TensorFlow / PyTorch</li>
-                                <li>Jupyter Notebook</li>
-                                <li>GPU: NVIDIA Tesla T4</li>
+                                <li>AWS Amplify Hosting, GitHub push-to-deploy</li>
+                                <li>amplify.yml</li>
                             </ul>
                         </div>
             
@@ -141,32 +95,7 @@
 
 
                 <section class="content-section">
-                    <h2>Value Proposition</h2>
-                    <p>
-                        This self-directed research project explores the application of Vision Transformer (ViT) models 
-                        for facial beauty prediction, aiming to evaluate their effectiveness compared to traditional 
-                        convolutional neural networks like VGG16 and ResNet-50. By leveraging pre-trained ViT architectures 
-                        and fine-tuning them on benchmark datasets such as SCUT-FBP5500, the project seeks to gain hands-on 
-                        experience with transformer-based models in computer vision and contribute to ongoing discussions in 
-                        AI-powered aesthetic analysis.
-                    </p>
-                    
 
-                </section>
-
-
-                <section class="content-section">
-    <h2>What I Learned</h2>
-    <div class="learnings-list">
-        <ul>
-            <li>Gained practical experience in applying <strong>transfer learning</strong> to improve model performance on limited datasets.</li>
-            <li>Understood the strengths and limitations of <strong>CNNs vs. Transformers</strong> for computer vision tasks.</li>
-            <li>Learned how <strong>ViTs capture global context</strong> more effectively than CNNs, which focus mainly on local features.</li>
-            <li>Improved skills in <strong>model evaluation</strong> using metrics such as MSE, MAE, and Pearson Correlation.</li>
-            <li>Hands-on experience with <strong>Python deep learning frameworks</strong> (TensorFlow/PyTorch) and GPU training.</li>
-            <li>Developed insights into how research can translate to <strong>real-world applications</strong> such as aesthetics, advertising, and social media.</li>
-        </ul>
-    </div>
 </section>
 
                 
@@ -174,7 +103,7 @@
 
             <!-- Project Links -->
             <div class="project-actions">
-                <a href="https://elib.vku.udn.vn/bitstream/123456789/2701/1/B.5.45-52.pdf" target="_blank" class="action-btn primary">
+                <a href="https://main.d2gy4gwcmsx17c.amplifyapp.com/" target="_blank" class="action-btn primary">
                     View Live Project
                 </a>
                 
@@ -193,7 +122,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Hoang Le Xuan</p>
+            <p>&copy; 2026 Hoang Le Xuan</p>
         </div>
     </footer>
 
