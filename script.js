@@ -79,6 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach(card => {
+        if (card.closest('a.project-card-link')) return;
+
         // Add cursor pointer style
         card.style.cursor = 'pointer';
         

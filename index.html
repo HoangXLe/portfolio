@@ -1,152 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔨 Hoang Le | Data Scientist & Researcher</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" class="theme-toggle">
-        <span class="theme-icon">🌙</span>
-    </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoang Le</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&family=Source+Serif+4:wght@500;650&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="mark" aria-hidden="true">H</span>
+          <span class="brand-name">Hoang Le</span>
+        </a>
+        <div class="header-icons">
+          <a href="https://github.com/HoangLeXuan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/hoangle24/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33 0-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+          </a>
+          <a href="https://x.com/HoangLe33805880" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <svg viewBox="0 0 24 24"><path d="M18.9 1.2h3.7l-8.1 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.9L0 1.2h7.6l5.3 7 6-7zm-1.3 19.4h2L6.5 3.3H4.3z"/></svg>
+          </a>
+          <a href="mailto:lexuanhoang2402@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </div>
+      </header>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-left">
-                <img src="./images/profile.jpg" alt="Hoang Le image" class="profile-image">
-                <!-- If no image: <div class="profile-initial">[YN]</div> -->
-                <div class="profile-info">
-                    <h1 class="profile-name">
+      <div class="nav-row">
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="writing.html">Writing</a>
+          <a href="assets/docs/Hoang-Le-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+          <a href="#subscribe">Contact</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button">lights out</button>
+      </div>
 
-                        <!-- If failed, delete this section from here-->
-                        <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://hoangxle.github.io/portfolio/index.html">Hoang Le</a></li>
-                            
-                        </li>
-                        <!-- To here-->
-                        
-                    </h1>
-                    <p class="profile-title">Data Scientist</p>
-                </div>
+      <section class="hero">
+        <div>
+          <h1>Data scientist &amp; engineer</h1>
+          <p class="lede">
+            I build models and small systems that have to survive contact with real users.
+            Construction sites in Vietnam still shape how I think: load, failure modes, and people in the loop.
+          </p>
+          <ul class="facts">
+            <li>Applied AI products — HarvestIQ on AWS, Mizu on FastAPI</li>
+            <li>Research notes on invasive species modeling and vision transformers</li>
+            <li>Stack: Python, SQL, React, scikit-learn, PyTorch <span>mostly data, models, and product</span></li>
+          </ul>
+        </div>
+        <div class="portrait">
+          <img src="assets/images/profile.jpg" alt="Hoang Le" />
+          <div class="portrait-icons">
+            <a href="https://github.com/HoangLeXuan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/hoangle24/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33 0-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+            </a>
+            <a href="https://x.com/HoangLe33805880" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg viewBox="0 0 24 24"><path d="M18.9 1.2h3.7l-8.1 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.9L0 1.2h7.6l5.3 7 6-7zm-1.3 19.4h2L6.5 3.3H4.3z"/></svg>
+            </a>
+            <a href="mailto:lexuanhoang2402@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Selected work</h2>
+        <p class="block-intro">Field tools, models, and a few notes I still stand behind.</p>
+        <div class="project-grid">
+          <a class="project-card" href="https://main.d2gy4gwcmsx17c.amplifyapp.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/harvestiq.svg" alt="" />
+            <div class="card-copy">
+              <span class="kicker">Live product</span>
+              <h3>HarvestIQ</h3>
             </div>
-            <nav class="nav">
-                <a href="about.html" class="nav-link">About</a>
-                <a href="./Hoang Le - Resume.pdf" target="_blank" class="nav-link">My Resume</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="mailto:lexuanhoang2402@gmail.com" class="nav-link contact-icon">✉ Email</a>
-            </nav>
+          </a>
+          <div class="project-card">
+            <img src="assets/images/mizu.svg" alt="" />
+            <div class="card-copy">
+              <span class="kicker">IoT + FastAPI</span>
+              <h3>Mizu</h3>
+            </div>
+          </div>
+          <a class="project-card" href="projects/ai-timeline.html">
+            <img src="assets/images/project1-preview.jpg" alt="" />
+            <div class="card-copy">
+              <span class="kicker">A visual history of</span>
+              <h3>AI and ML</h3>
+            </div>
+          </a>
+          <a class="project-card" href="projects/ctis.html">
+            <img src="assets/images/project4-preview.jpg" alt="" />
+            <div class="card-copy">
+              <span class="kicker">Spatial ML</span>
+              <h3>Cane toad range</h3>
+            </div>
+          </a>
+          <a class="project-card" href="projects/Beauty_VIT.html">
+            <img src="assets/images/project5-preview.jpg" alt="" />
+            <div class="card-copy">
+              <span class="kicker">Paper</span>
+              <h3>Vision Transformer</h3>
+            </div>
+          </a>
+          <a class="project-card" href="projects/RAI_frame.html">
+            <img src="assets/images/project3-preview.jpg" alt="" />
+            <div class="card-copy">
+              <span class="kicker">A field note on</span>
+              <h3>Responsible AI</h3>
+            </div>
+          </a>
         </div>
-    </header>
+      </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <div class="container">
-            <!-- About Section -->
-            <header>
-            <h1 class="page__title" itemprop="headline">About me</h1>
-            <header>
-                
-            <!-- Projects Section -->
-            <section id="work" class="projects">
-                <h2 class="section-title">Past Projects</h2>
-                
-                <div class="projects-grid">
-                    <!-- Project 1 - Click to go to dedicated page -->
-                    <article class="project-card" onclick="navigateToProject('ai-timeline')">
-                        <div class="project-image">
-                            <img src="./images/project1-preview.jpg" alt="AI/ML Timeline" class="project-img">
-                            <!-- If no image: <div class="project-placeholder">AI/ML Timeline</div> -->
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">AI/ML Timeline</h4>
-                            <p class="project-description">An interactive timeline that visualizes the key milestones in AI and machine learning history, from the 1950s to today.</p>
-                        </div>
-                    </article>
-
-                    <!-- Project 4 - Click to go to dedicated page -->
-                    <article class="project-card" onclick="navigateToProject('ctis')">
-                        <div class="project-image">
-                            <img src="./images/project4-preview.jpg" alt="[Project 4 Name]" class="project-img">
-                            <!-- If no image: <div class="project-placeholder">Web Scraper</div> -->
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Modeling Invasive Species Dynamics and Distribution </h4>
-                            <p class="project-description">My research assess potential cane toad distribution in Australia using statistical and machine learning models to inform management strategies and combat the spread of this invasive species.</p>
-                        </div>
-                    </article>
-
-                    <!-- Project 5 - Click to go to dedicated page -->
-                    <article class="project-card" onclick="navigateToProject('Beauty_VIT')">
-                        <div class="project-image">
-                            <img src="./images/project5-preview.jpg" alt="[Project 5 Name]" class="project-img">
-                            <!-- If no image: <div class="project-placeholder">Web Scraper</div> -->
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">Facial Beauty Prediction with Vision Transformer</h4>
-                            <p class="project-description">Tran, D., Le, T., Tran, K., Le, H., Do, C., & Ha, T. (n.d.). Facial beauty prediction with vision transformer. The George Washington Institute of Data Science and Artificial Intelligence, The International Society of Data Scientists. https://elib.vku.udn.vn/bitstream/123456789/2701/1/B.5.45-52.pdf</p>
-                        </div>
-                    </article>
-
-                    <!-- Project 6 - Click to go to dedicated page -->
-                    <article class="project-card" onclick="navigateToProject('HarvestIQ')">
-                        <div class="project-image">
-                            <img src="./images/HarvestIQ-preview.jpg" alt="[Project 8 Name]" class="project-img">
-                            <!-- If no image: <div class="project-placeholder">Web Scraper</div> -->
-                        </div>
-                        <div class="project-content">
-                            <h4 class="project-title">HarvestIQ</h4>
-                            <p class="project-description">POC for crop disease/ health application</p>
-                        </div>
-                    </article>
-
-                </div>
-            </section>
-
-            <!-- Current Work Section -->
-            <section class="current-work">
-                <p class="current-label">Currently working on <span class="status-dot"></span></p>
-                <h2 class="current-title">What should I do next? Let's Connect!</h2>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact" class="contact">
-                <div class="social-links">
-                    <a href="mailto:lexuanhoang2402@gmail.com" class="social-link" title="Email">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/hoangle24/" target="_blank" class="social-link" title="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/HoangLeXuan" target="_blank" class="social-link" title="GitHub">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="https://x.com/HoangLe33805880" target="_blank" class="social-link" title="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
-                    </a>
-                    
-                </div>
-            </section>
+      <section class="section-row">
+        <div class="section-label">Now</div>
+        <p>Shipping HarvestIQ on Amplify and tightening Mizu’s auth and detection pipeline. I want the evaluation to be as honest as the demo.</p>
+      </section>
+      <section class="section-row">
+        <div class="section-label">Previously</div>
+        <p>Grew up around construction sites in Vietnam. That is still the mental model: measure twice, expect load, design for the person holding the tool.</p>
+      </section>
+      <section class="section-row">
+        <div class="section-label">Writing</div>
+        <div class="list">
+          <a href="projects/ai-timeline.html">
+            <span class="item-title">AI/ML timeline</span>
+            <span class="item-desc">Milestones from the 1950s to now.</span>
+          </a>
+          <a class="more" href="writing.html">all writing</a>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Hoang Le</p>
+      </section>
+      <section class="section-row">
+        <div class="section-label">Stack</div>
+        <div>
+          <p>Python, R, SQL, JavaScript, React, FastAPI, scikit-learn, PyTorch, TensorFlow, Docker, AWS.</p>
+          <p class="muted" style="margin-top:8px">Mostly data, models, and product.</p>
         </div>
+      </section>
+
+      <section class="subscribe" id="subscribe">
+        <h2>If you want occasional notes on models and builds, send your email.</h2>
+        <div class="subscribe-box">
+          <form class="subscribe-form" id="subscribe-form">
+            <input type="email" name="email" placeholder="Type your email..." required autocomplete="email" />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="subscribe-note">This is a simple list on my side — not Substack. I’ll only use the address to send notes.</p>
+          <p class="subscribe-ok" id="subscribe-ok">Thanks. You’re on the list.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://github.com/HoangLeXuan" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/hoangle24/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33 0-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://x.com/HoangLe33805880" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M18.9 1.2h3.7l-8.1 9.2L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.9L0 1.2h7.6l5.3 7 6-7zm-1.3 19.4h2L6.5 3.3H4.3z"/></svg>
+          Twitter
+        </a>
+        <a href="#subscribe">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v2H4V4zm0 4h16v12H4V8zm2 2v8h12v-8H6zm2.4 1.2 3.6 2.4 3.6-2.4 1.2 1.6-4.8 3.2-4.8-3.2 1.2-1.6z"/></svg>
+          Newsletter
+        </a>
+        <a href="mailto:lexuanhoang2402@gmail.com">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
-</body>
-</html> 
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
