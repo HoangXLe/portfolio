@@ -142,8 +142,8 @@ a:hover { opacity: 0.75; }
 }
 
 .portrait img {
-  width: 260px;
-  height: 260px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -180,7 +180,7 @@ a:hover { opacity: 0.75; }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -348,5 +348,5 @@ a:hover { opacity: 0.75; }
   .mark { width: 44px; height: 44px; font-size: 1.35rem; }
   .brand-name { font-size: 1.35rem; }
   .portrait { justify-self: center; }
-  .portrait img { width: 180px; height: 180px; }
+  .portrait img { width: 140px; height: 140px; }
 }
